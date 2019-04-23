@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-header">
+    Agregar una nueva pregunta
+  </div>
+  <div class="card-blo">
+    <form (submit)="plusCuestion()">
+      <div class="form-group">
+        <label for="cuestion">Texto de pregunta</label>
+        <input type="text" class="form-control" [(ngModel)]="cuestion" name="cuestion">
+      </div>
+      <div class="form-group">
+        <label for="cuestion">Texto de Respuesta</label>
+        <input type="text" class="form-control" [(ngModel)]="answer" name="answer">
+      </div>
+      <input type="submit" class="btn btn-primary" value="Enviar" >
+    </form>
+  </div>
+</div>
